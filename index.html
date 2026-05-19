@@ -3,27 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="V Repairs (Pty) Ltd — Qualified Electrical & Solar Installations in Cape Town. Domestic, industrial and commercial electrical and solar services." />
-  <meta name="keywords" content="electrician Cape Town, solar installation Cape Town, electrical maintenance, V Repairs, Veclet Biyoudi" />
-  <title>V Repairs (Pty) Ltd — Electrical & Solar Installations Cape Town</title>
+  <meta name="description" content="V Repairs (Pty) Ltd — Qualified Electrical & Solar Installations in Cape Town. Domestic, Industrial & Commercial solutions you can trust." />
+  <meta name="keywords" content="electrician cape town, solar installation cape town, electrical repairs, V Repairs, Parrow electrician" />
+  <title>V Repairs (Pty) Ltd — Electrical & Solar Solutions, Cape Town</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner container">
-      <div>📍 103 Alexandra Street, Parrow, Cape Town, 7500</div>
-      <div>📧 <a href="mailto:veclet@outlook.com">veclet@outlook.com</a></div>
-      <div>📞 <a href="tel:+27785478424">+27 78 547 8424</a></div>
-    </div>
-  </header>
 
-  <nav class="nav container" aria-label="Primary navigation">
-    <a href="#top" class="brand-logo" id="top">
-      <span class="brand-mark">⚡</span>
-      <span class="brand-text">V Repairs <small>Pty Ltd</small><small>Electrical & Solar Solutions</small></span>
 <!-- ========================================================
      NAVIGATION
 ======================================================== -->
@@ -32,28 +22,30 @@
     <a href="#top" class="logo" aria-label="V Repairs Home">
       <img src="logo.png" alt="V Repairs logo" class="logo-image" />
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#top">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-actions">
-      <a class="btn btn-secondary" href="tel:+27785478424">Call Now</a>
-      <a class="btn btn-primary" href="#contact">Free Quote</a>
-    </div>
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:+27785478424" class="btn btn-primary nav-cta">
+      <span class="btn-icon">📞</span> Call Now
+    </a>
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-hidden="true">
+    <ul>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="tel:+27785478424" class="btn btn-primary mobile-cta">📞 Call Now</a></li>
+    </ul>
+  </div>
+</header>
 
-  <section class="hero" id="top">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Qualified Electrical & Solar Installations You Can Trust</p>
-        <h1>Qualified Electrical &amp; Solar Installations You Can Trust</h1>
-        <p class="hero-copy-text">Domestic, Industrial &amp; Commercial Electrical Solutions in Cape Town.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+27785478424">Call Now</a>
-          <a class="btn btn-outline" href="#contact">Get a Free Quote</a>
 <!-- ========================================================
      HERO SECTION
 ======================================================== -->
@@ -89,7 +81,7 @@
           Get a Free Quote
         </a>
       </div>
-      <p class="hero-slogan"> Powering Your Life — One Panel at a Time ⚡☀️</p>
+      <p class="hero-slogan">⚡ Powering Your Life — One Panel at a Time ⚡☀️</p>
     </div>
 
     <!-- Stats strip -->
@@ -140,107 +132,198 @@
         <div class="service-icon service-icon--blue" aria-hidden="true">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="currentColor" opacity=".15"/><path d="M24 10v14l8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="32" r="6" stroke="currentColor" stroke-width="2.5"/><path d="M16 12h16M16 36h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".4"/></svg>
         </div>
-        <p class="hero-slogan">Powering Your Life — One Panel at a Time ⚡☀️</p>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-shot">
-          <img class="hero-bg" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80" alt="Solar panel installation in Cape Town" />
-          <div class="hero-overlay">
-            <img src="https://images.unsplash.com/photo-1581094480060-374b7d92e9c0?w=900&q=80" alt="V Repairs service van" />
-          </div>
-          <div class="hero-photo-tag">Cape Town electrician & solar service</div>
+        <h3 class="service-name">Electrical Installations</h3>
+        <p class="service-desc">Safe and professional installations for homes, businesses &amp; industries. We wire it right the first time.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </article>
+
+      <!-- Service Card 2 -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon service-icon--yellow" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="currentColor" opacity=".15"/><path d="M14 24a10 10 0 1 1 10 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M18 20l-6 4 6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 18l4 6-4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
         </div>
-      </div>
-    </div>
-  </section>
+        <h3 class="service-name">Electrical Maintenance</h3>
+        <p class="service-desc">Fault finding, repairs &amp; maintenance to keep you powered. Because flickering lights aren't a vibe.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </article>
 
-  <section class="services" id="services">
-    <div class="container section-intro">
-      <p class="eyebrow accent">Our Services</p>
-      <h2>What We Do</h2>
-      <p class="section-copy">If it has wires or panels — we fix it 😄</p>
-    </div>
-    <div class="container service-grid">
-      <article class="service-card">
-        <div class="service-icon">🔌</div>
-        <h3>Electrical Installations</h3>
-        <p>Safe, compliant installations for homes, businesses and industry.</p>
+      <!-- Service Card 3 -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon service-icon--blue" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="currentColor" opacity=".15"/><rect x="14" y="18" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M19 18v-4a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="26" r="2" fill="currentColor"/></svg>
+        </div>
+        <h3 class="service-name">Domestic Electrical Work</h3>
+        <p class="service-desc">From DB upgrades to lighting, plugs &amp; everything in between. Your home's electrical health is our priority.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
       </article>
-      <article class="service-card">
-        <div class="service-icon">🛠️</div>
-        <h3>Electrical Maintenance</h3>
-        <p>Fault finding, repairs and preventative maintenance to keep you powered.</p>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">🏠</div>
-        <h3>Domestic Electrical Work</h3>
-        <p>From DB upgrades to lighting, plugs and dependable home wiring.</p>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">🏭</div>
-        <h3>Industrial & Commercial Installations</h3>
-        <p>Reliable electrical solutions for factories, offices and warehouses.</p>
-      </article>
-      <article class="service-card featured">
-        <div class="service-icon">☀️</div>
-        <h3>Solar System Installation</h3>
-        <p>High-quality solar systems installed by qualified professionals.</p>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3>Solar System Maintenance</h3>
-        <p>Keep your solar system performing at its best with routine checks.</p>
-      </article>
-    </div>
-  </section>
 
-  <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-copy">
-        <p class="eyebrow accent">About V Repairs</p>
-        <h2>Your Local Electrical & Solar Experts</h2>
-        <p>At V Repairs (Pty) Ltd, we deliver professional electrical and solar solutions with honesty, safety and a friendly local touch. Proudly serving Cape Town with qualified electricians and transparent pricing.</p>
-        <ul class="feature-list">
-          <li>✓ Qualified electricians with real experience</li>
-          <li>✓ Safety first on every install and repair</li>
-          <li>✓ Affordable, honest pricing with no surprises</li>
-          <li>✓ Local Cape Town service you can trust</li>
-        </ul>
-      </div>
-      <div class="about-media">
-        <img src="https://images.unsplash.com/photo-1511453673962-5d8171c99cf3?w=900&q=80" alt="Electrician checking solar panels" />
+      <!-- Service Card 4 -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon service-icon--yellow" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="currentColor" opacity=".15"/><rect x="12" y="14" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M18 34v4M30 34v4M15 38h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 22h14M17 27h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5"/></svg>
+        </div>
+        <h3 class="service-name">Industrial &amp; Commercial Installations</h3>
+        <p class="service-desc">Reliable electrical solutions for factories, offices, warehouses &amp; more. Big jobs done right.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </article>
+
+      <!-- Service Card 5 -->
+      <article class="service-card service-card--featured" tabindex="0">
+        <div class="service-icon service-icon--sun" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="currentColor" opacity=".15"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5"/><path d="M24 8v4M24 36v4M8 24h4M36 24h4M12.7 12.7l2.8 2.8M32.5 32.5l2.8 2.8M12.7 35.3l2.8-2.8M32.5 15.5l2.8-2.8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <div class="featured-badge">Most Popular</div>
+        <h3 class="service-name">Solar System Installation</h3>
+        <p class="service-desc">High-quality solar systems installed by qualified professionals. Say hello to lower bills and load-shedding freedom.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </article>
+
+      <!-- Service Card 6 -->
+      <article class="service-card" tabindex="0">
+        <div class="service-icon service-icon--blue" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="currentColor" opacity=".15"/><path d="M14 22h20v8a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2v-8z" stroke="currentColor" stroke-width="2.5"/><path d="M18 22v-4a6 6 0 0 1 12 0v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M21 28l1.5 3 1.5-3 1.5 3 1.5-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/></svg>
+        </div>
+        <h3 class="service-name">Solar System Maintenance</h3>
+        <p class="service-desc">Keep your solar system performing at its best. Regular checks, cleaning &amp; fault resolution.</p>
+        <a href="#contact" class="service-link">Get a quote →</a>
+      </article>
+
+    </div><!-- /services-grid -->
+  </div>
+</section>
+
+<!-- ========================================================
+     ABOUT SECTION
+======================================================== -->
+<section class="about" id="about" aria-labelledby="about-title">
+  <div class="container about-inner">
+
+    <div class="about-content fade-in-scroll">
+      <span class="section-label section-label--light">About V Repairs</span>
+      <h2 class="section-title section-title--light" id="about-title">
+        Local Experts.<br /><span class="accent-text">Real Results.</span>
+      </h2>
+      <p class="about-lead">
+        At V Repairs (Pty) Ltd, we're committed to delivering high-quality electrical and solar solutions with honesty, safety, and professionalism.
+      </p>
+      <p class="about-body">
+        Based in Parrow, Cape Town, we've been powering homes and businesses across the Western Cape with qualified workmanship and a no-nonsense approach. We don't cut corners — electricity doesn't forgive shortcuts, and neither do we.
+      </p>
+
+      <ul class="about-list" role="list">
+        <li>
+          <span class="check-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Qualified &amp; Experienced Electricians</strong>
+            <span>Registered, compliant, and actually know what they're doing</span>
+          </div>
+        </li>
+        <li>
+          <span class="check-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Safety First, Always</strong>
+            <span>Every job meets SANS 10142 electrical standards</span>
+          </div>
+        </li>
+        <li>
+          <span class="check-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Affordable &amp; Honest Pricing</strong>
+            <span>No surprise invoices — you know the cost upfront</span>
+          </div>
+        </li>
+        <li>
+          <span class="check-icon" aria-hidden="true">✅</span>
+          <div>
+            <strong>Proudly Serving Cape Town</strong>
+            <span>Local, reliable, and we actually pitch up on time</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-visual fade-in-scroll-delay" aria-hidden="true">
+      <!-- Decorative solar/electrical illustration -->
+      <div class="about-card-stack">
+        <div class="about-card about-card--back"></div>
+        <div class="about-card about-card--front">
+          <div class="about-icon-grid">
+            <div class="about-icon-cell">☀️</div>
+            <div class="about-icon-cell">⚡</div>
+            <div class="about-icon-cell">🔧</div>
+            <div class="about-icon-cell">🏠</div>
+            <div class="about-icon-cell">🏭</div>
+            <div class="about-icon-cell">🔋</div>
+          </div>
+          <p class="about-card-tagline">"Safe Power. Smart Solar.<br />Real Professionals."</p>
+          <div class="about-card-rating">
+            <span class="stars" aria-label="5 stars">★★★★★</span>
+            <span>Trusted by Cape Town</span>
+          </div>
+        </div>
       </div>
       <div class="about-image fade-in-scroll-delay">
         <img src="https://images.unsplash.com/photo-1581094480060-374b7d92e9c0?w=1200&q=80" alt="V Repairs team working on solar panels in Cape Town" />
       </div>
     </div>
-  </section>
 
-  <section class="contact-section" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-copy">
-        <p class="eyebrow accent">Contact Us</p>
-        <h2>Send Us a Message</h2>
-        <p>Ready to get your project powered? Fill in the form and Veclet will get back to you shortly.</p>
-        <div class="contact-details">
-          <div><strong>Phone</strong><br /><a href="tel:+27785478424">+27 78 547 8424</a></div>
-          <div><strong>Email</strong><br /><a href="mailto:veclet@outlook.com">veclet@outlook.com</a></div>
-          <div><strong>Address</strong><br />103 Alexandra Street, Parrow, Cape Town, 7500</div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CONTACT SECTION
+======================================================== -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <div class="container contact-inner">
+
+    <!-- Contact Details Panel -->
+    <div class="contact-details fade-in-scroll">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title" id="contact-title">Let's Talk Power</h2>
+      <p class="contact-intro">
+        Ready for a quote, need emergency repairs, or just have questions?
+        Reach out — we respond fast (because good electricians shouldn't leave you in the dark).
+      </p>
+
+      <div class="contact-items">
+        <a href="tel:+27785478424" class="contact-item" aria-label="Call us at +27 78 547 8424">
+          <span class="contact-item-icon">📞</span>
+          <div>
+            <span class="contact-item-label">Call Us</span>
+            <span class="contact-item-value">+27 78 547 8424</span>
+            <span class="contact-item-sub">Click to call</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/27785478424?text=Hi%20V%20Repairs!%20I'd%20like%20a%20free%20quote." target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="WhatsApp us">
+          <span class="contact-item-icon" style="background:#25D366; color:#fff;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.548 5.874L.057 23.882a.5.5 0 0 0 .61.61l6.008-1.491A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.795-.538-5.363-1.475l-.38-.224-3.942.978.998-3.944-.247-.398A9.945 9.945 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </span>
+          <div>
+            <span class="contact-item-label">WhatsApp Us</span>
+            <span class="contact-item-value">+27 78 547 8424</span>
+            <span class="contact-item-sub">Click to chat</span>
+          </div>
+        </a>
+
+        <a href="mailto:veclet@outlook.com" class="contact-item" aria-label="Email us">
+          <span class="contact-item-icon">✉️</span>
+          <div>
+            <span class="contact-item-label">Email Us</span>
+            <span class="contact-item-value">veclet@outlook.com</span>
+            <span class="contact-item-sub">We reply within 24 hrs</span>
+          </div>
+        </a>
+
+        <div class="contact-item no-link">
+          <span class="contact-item-icon">📍</span>
+          <div>
+            <span class="contact-item-label">Our Location</span>
+            <span class="contact-item-value">103 Alexandra Street</span>
+            <span class="contact-item-sub">Parrow, Cape Town, 7500</span>
+          </div>
         </div>
       </div>
-      <form class="contact-form" id="contactForm" action="contact.php" method="POST" novalidate>
-        <input type="hidden" name="website" id="website" value="" aria-hidden="true" />
-        <div class="field-row">
-          <label class="field-stack">
-            <span>Name</span>
-            <input type="text" id="name" name="name" placeholder="Your name" required maxlength="80" autocomplete="name" />
-            <small class="error-message" id="nameError"></small>
-          </label>
-          <label class="field-stack">
-            <span>Phone</span>
-            <input type="tel" id="phone" name="phone" placeholder="+27 78 547 8424" required maxlength="20" autocomplete="tel" />
-            <small class="error-message" id="phoneError"></small>
-          </label>
 
       <!-- Social icons -->
       <div class="social-strip">
@@ -260,75 +343,185 @@
       <div class="form-card">
         <div class="form-header">
           <h3>Get a Free Quote</h3>
-          <p>Send us a message and we'll get back to you fast </p>
+          <p>Send us a message and we'll get back to you fast ⚡</p>
         </div>
-        <label class="field-stack">
-          <span>Email</span>
-          <input type="email" id="email" name="email" placeholder="Email address" maxlength="120" autocomplete="email" />
-          <small class="error-message" id="emailError"></small>
-        </label>
-        <label class="field-stack">
-          <span>Service</span>
-          <select id="service" name="service">
-            <option value="">Select a service (optional)</option>
-            <option value="Electrical installations">Electrical installations</option>
-            <option value="Electrical maintenance">Electrical maintenance</option>
-            <option value="Domestic electrical work">Domestic electrical work</option>
-            <option value="Industrial & Commercial">Industrial & Commercial installations</option>
-            <option value="Solar system installation">Solar system installation</option>
-            <option value="Solar system maintenance">Solar system maintenance</option>
-          </select>
-        </label>
-        <label class="field-stack">
-          <span>Message</span>
-          <textarea id="message" name="message" placeholder="Tell us what you need" required maxlength="1000" rows="5"></textarea>
-          <small class="error-message" id="messageError"></small>
-        </label>
-        <button class="btn btn-primary btn-submit" id="submitBtn" type="submit">
-          <span class="btn-text">Send Message</span>
-          <span class="btn-loader" aria-hidden="true"></span>
-        </button>
-        <p class="form-note">Messages go directly to <strong>veclet@outlook.com</strong>. We’ll power up a response shortly ⚡</p>
-        <div class="form-status success" id="formSuccess" role="status">Thanks! We’ll power up a response shortly ⚡</div>
-        <div class="form-status error" id="formError" role="alert">Something went wrong. Please call <a href="tel:+27785478424">+27 78 547 8424</a>.</div>
-      </form>
-    </div>
-  </section>
 
-  <section class="extras">
-    <div class="container extras-grid">
-      <a class="quick-card" href="https://wa.me/27785478424?text=Hi%20V%20Repairs!" target="_blank" rel="noopener noreferrer">
-        <span>WhatsApp</span>
-        <strong>Chat with us</strong>
-      </a>
-      <a class="quick-card" href="mailto:veclet@outlook.com">
-        <span>Email</span>
-        <strong>Send an enquiry</strong>
-      </a>
-      <a class="quick-card" href="#contact">
-        <span>Quote</span>
-        <strong>Request a free quote</strong>
-      </a>
-    </div>
-  </section>
+        <!-- 
+          NOTE: This form submits to contact.php on your server.
+          See contact.php for the backend handler.
+          For testing locally, the JS will simulate submission.
+        -->
+        <form id="contactForm" action="contact.php" method="POST" novalidate>
+          <!-- Honeypot anti-spam field (hidden from real users) -->
+          <div class="honeypot" aria-hidden="true">
+            <label for="website">Leave this blank</label>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" />
+          </div>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="footer-brand">V Repairs — Safe Power. Smart Solar. Real Professionals.</p>
-      </div>
-      <div class="footer-copy">© <span id="year"></span> V Repairs (Pty) Ltd. Proudly serving Cape Town.</div>
-      <div class="footer-social">
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-      </div>
-    </div>
-  </footer>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name <span class="required" aria-label="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. John Smith"
+                required
+                autocomplete="name"
+                minlength="2"
+                maxlength="80"
+              />
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g. 078 547 8424"
+                required
+                autocomplete="tel"
+                maxlength="20"
+              />
+              <span class="field-error" id="phoneError" role="alert"></span>
+            </div>
+          </div>
 
-  <div class="floating-actions">
-    <a class="float-btn float-whatsapp" href="https://wa.me/27785478424?text=Hi%20V%20Repairs!" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    <a class="float-btn float-call" href="tel:+27785478424">Call</a>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. john@email.com"
+              autocomplete="email"
+              maxlength="120"
+            />
+            <span class="field-error" id="emailError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service (optional)</option>
+              <option value="electrical-installation">Electrical Installation</option>
+              <option value="electrical-maintenance">Electrical Maintenance</option>
+              <option value="domestic-electrical">Domestic Electrical Work</option>
+              <option value="industrial-commercial">Industrial &amp; Commercial</option>
+              <option value="solar-installation">Solar System Installation</option>
+              <option value="solar-maintenance">Solar System Maintenance</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message <span class="required" aria-label="required">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us what you need — the more detail, the better the quote!"
+              required
+              minlength="10"
+              maxlength="1000"
+            ></textarea>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">✈️</span>
+            <span class="btn-loader" aria-hidden="true"></span>
+          </button>
+
+          <!-- Success message -->
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            ⚡ Thanks! We'll power up a response shortly ⚡
+          </div>
+
+          <!-- Error message -->
+          <div class="form-error-msg" id="formErrorMsg" role="alert" aria-live="polite">
+            ⚠️ Oops! Something went wrong. Please try again or call us directly.
+          </div>
+
+          <p class="form-note">
+            🔒 Messages go directly to <a href="mailto:veclet@outlook.com">veclet@outlook.com</a>
+          </p>
+        </form>
+      </div><!-- /form-card -->
+    </div>
+
+  </div><!-- /contact-inner -->
+</section>
+
+<!-- ========================================================
+     FOOTER
+======================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+
+    <div class="footer-brand">
+      <a href="#top" class="logo logo--light" aria-label="V Repairs Home">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">V<span class="logo-accent">Repairs</span><span class="logo-sub">(Pty) Ltd</span></span>
+      </a>
+      <p class="footer-tagline">Safe Power. Smart Solar. Real Professionals.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul role="list">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul role="list">
+        <li><a href="tel:+27785478424">📞 +27 78 547 8424</a></li>
+        <li><a href="mailto:veclet@outlook.com">✉️ veclet@outlook.com</a></li>
+        <li>📍 103 Alexandra Street, Parrow, Cape Town, 7500</li>
+      </ul>
+    </div>
+
+    <div class="footer-hours">
+      <h4>Working Hours</h4>
+      <ul role="list">
+        <li><span>Mon – Fri</span><span>7:30 AM – 5:00 PM</span></li>
+        <li><span>Saturday</span><span>8:00 AM – 1:00 PM</span></li>
+        <li><span>Sunday</span><span>Closed</span></li>
+      </ul>
+    </div>
+
   </div>
 
-  <script src="main.js"></script>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> V Repairs (Pty) Ltd. All Rights Reserved.</p>
+      <p>V Repairs — Safe Power. Smart Solar. Real Professionals. ⚡</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================================================
+     FLOATING MOBILE BUTTONS
+======================================================== -->
+<div class="floating-btns" aria-label="Quick contact">
+  <a href="https://wa.me/27785478424?text=Hi%20V%20Repairs!%20I'd%20like%20a%20free%20quote." 
+     target="_blank" rel="noopener noreferrer" 
+     class="float-btn float-btn--wa" 
+     aria-label="Chat on WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.564 4.14 1.548 5.874L.057 23.882a.5.5 0 0 0 .61.61l6.008-1.491A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.795-.538-5.363-1.475l-.38-.224-3.942.978.998-3.944-.247-.398A9.945 9.945 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  </a>
+  <a href="tel:+27785478424" class="float-btn float-btn--call" aria-label="Call us now">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  </a>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
