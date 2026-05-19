@@ -3,7 +3,7 @@ const navLinks = document.getElementById('navLinks');
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const formSuccess = document.getElementById('formSuccess');
-const formError = document.getElementById('formError');
+const formError = document.getElementById('formErrorMsg');
 const yearEl = document.getElementById('year');
 
 if (navToggle && navLinks) {
@@ -110,6 +110,31 @@ function hideMessages() {
   formSuccess?.classList.remove('show');
   formError?.classList.remove('show');
 }
+
+function revealOnScroll() {
+  const targets = document.querySelectorAll('.fade-in-scroll, .fade-in-scroll-delay');
+  if (!targets.length) return;
+
+  const onIntersect = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(onIntersect, {
+      threshold: 0.15,
+    });
+    targets.forEach(target => observer.observe(target));
+  } else {
+    targets.forEach(target => target.classList.add('visible'));
+  }
+}
+
+revealOnScroll();
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
